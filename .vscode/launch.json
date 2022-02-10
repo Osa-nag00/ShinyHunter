@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ScreenCaptureRectangle",
+            "request": "launch",
+            "mainClass": "ScreenCaptureRectangle",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Screenshot",
+            "request": "launch",
+            "mainClass": "Screenshot",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch gameObjectTRacking",
+            "request": "launch",
+            "mainClass": "gameObjectTRacking",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Camera",
+            "request": "launch",
+            "mainClass": "Camera",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SH3",
+            "request": "launch",
+            "mainClass": "SH3",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch processingImage",
+            "request": "launch",
+            "mainClass": "processingImage",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SH3Gui",
+            "request": "launch",
+            "mainClass": "SH3Gui",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShinyHunter3",
+            "request": "launch",
+            "mainClass": "ShinyHunter3",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch testOpenCVFile",
+            "request": "launch",
+            "mainClass": "testOpenCVFile",
+            "projectName": "ShinyHunter3_778a128a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch testOpenCVFile",
+            "request": "launch",
+            "mainClass": "testOpenCVFile",
+            "projectName": "open cv test_9961507f"
+        }
+    ]
+}
