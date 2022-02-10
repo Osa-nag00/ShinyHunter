@@ -627,7 +627,7 @@ public class SH3Gui extends javax.swing.JFrame {
         ATT++;
         try {
             FileWriter myWriter = new FileWriter("attempts.txt");
-            myWriter.write("attempts: " + ATT);
+            myWriter.write("attempts: " + pokeNameStr + " - " + ATT);
             myWriter.close();
         } catch (IOException e) {
             // TODO Auto-generated catch block
