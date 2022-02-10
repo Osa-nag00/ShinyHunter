@@ -12,9 +12,11 @@ public class stringSimilarityChecker {
              try {
                 return OCRWord.length();
              } catch (Exception e) {
+
                  //TODO: handle exception
                  System.err.println("NO USERSTRING FOUND, MAKE SURE TO PRESS ENTER");
                  System.exit(1);
+                 
              }
              
          }
