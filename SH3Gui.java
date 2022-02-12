@@ -26,9 +26,9 @@ public class SH3Gui extends javax.swing.JFrame {
     private javax.swing.JButton getRunButtonFromBattle;
     private javax.swing.JLabel jLabel1;
     private static javax.swing.JLabel numOfAttempts;
-    private javax.swing.JLabel pokeCaptureComfimation;
+    private javax.swing.JLabel pokeCaptureConfirmation;
     private javax.swing.JButton runButton;
-    private static javax.swing.JLabel runCaptureComfimation;
+    private static javax.swing.JLabel runCaptureConfirmation;
     // End of GUI variables declaration
 
 
@@ -69,8 +69,8 @@ public class SH3Gui extends javax.swing.JFrame {
         getPokeOGColor = new javax.swing.JButton();
         getRunButtonFromBattle = new javax.swing.JButton();
         numOfAttempts = new javax.swing.JLabel();
-        pokeCaptureComfimation = new javax.swing.JLabel();
-        runCaptureComfimation = new javax.swing.JLabel();
+        pokeCaptureConfirmation = new javax.swing.JLabel();
+        runCaptureConfirmation = new javax.swing.JLabel();
 
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -164,10 +164,10 @@ public class SH3Gui extends javax.swing.JFrame {
         numOfAttempts.setText(Integer.toString(ATT));
         
 
-        pokeCaptureComfimation.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        pokeCaptureConfirmation.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         
 
-        runCaptureComfimation.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        runCaptureConfirmation.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -190,8 +190,8 @@ public class SH3Gui extends javax.swing.JFrame {
                             .addComponent(getRunButtonFromBattle, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pokeCaptureComfimation, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(runCaptureComfimation, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)))
+                            .addComponent(pokeCaptureConfirmation, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(runCaptureConfirmation, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(currentAttempts)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -210,11 +210,11 @@ public class SH3Gui extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(getPokeOGColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pokeCaptureComfimation))
+                    .addComponent(pokeCaptureConfirmation))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(getRunButtonFromBattle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(runCaptureComfimation))
+                    .addComponent(runCaptureConfirmation))
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(currentAttempts)
@@ -291,7 +291,7 @@ public class SH3Gui extends javax.swing.JFrame {
         
         pokeCords.setCords();
         gogcPoke.TakeScreenShot(pokeCords.getCordX(), pokeCords.getCordY(), whichPic);
-        pokeCaptureComfimation.setText("X: " + pokeCords.getCordX() + " Y: "+ pokeCords.getCordY());
+        pokeCaptureConfirmation.setText("X: " + pokeCords.getCordX() + " Y: "+ pokeCords.getCordY());
     }
 
     private void getRunButtonFromBattleActionPerformed(java.awt.event.ActionEvent evt) {                                                       
@@ -299,7 +299,7 @@ public class SH3Gui extends javax.swing.JFrame {
         int whichPic = 1;
         runCords.setCords();
         gogcRunButton.TakeScreenShot(runCords.getCordX(), runCords.getCordY(),whichPic);
-        runCaptureComfimation.setText("X: " + runCords.getCordX() + " Y: "+ runCords.getCordY());
+        runCaptureConfirmation.setText("X: " + runCords.getCordX() + " Y: "+ runCords.getCordY());
         
     }
     
@@ -346,8 +346,7 @@ public class SH3Gui extends javax.swing.JFrame {
                 System.out.println("In Battle, correct poke");
                 addToATT(); // adds to attempt counter if pokemon found
                 runFromBattle();
-                
-
+        
             }
 
 		}else if(a >= 3 & isRunbuttonVisible() == true){
@@ -357,7 +356,6 @@ public class SH3Gui extends javax.swing.JFrame {
                 addToATT(); // adds to attempt counter if pokemon found
                 runFromBattle();
                 
-            
 		}
 
 	}
@@ -365,15 +363,12 @@ public class SH3Gui extends javax.swing.JFrame {
     public void screenVideoCapture() throws AWTException 
 	{	
 
-        
         //vars just for this method
         int similarityIndex;
 		String OCRword;	
         int everyOtherWalk = 0;
-        int timeBewtweenRuns = 10;
+        int timeBetweenRuns = 10;
 
-
-		Robot r = new Robot();
 		ITesseract instance = new Tesseract();
         
 
@@ -403,13 +398,10 @@ public class SH3Gui extends javax.swing.JFrame {
         
 			try {
                 
-                
-
-
-
+            
                 if(isRunbuttonVisible()== true){
 
-                    System.out.println("run Button visble");
+                    System.out.println("run Button visible");
                     
                 }else{
 
@@ -423,13 +415,7 @@ public class SH3Gui extends javax.swing.JFrame {
                     everyOtherWalk --;
                 }
 
-        
-                
-                Thread.sleep(timeBewtweenRuns); //time in between screenshots in milliseconds
-				
-				Image = r.createScreenCapture(pokeNamePicture);
-				ImageIO.write(Image, "bmp", imageFile); // save image to current dir with bmp file type
-
+                Thread.sleep(timeBetweenRuns);
 				
 				OCRword = instance.doOCR(imageFile); 
 				OCRword = OCRword.replaceAll("\\s", ""); //removes all white space from word
@@ -446,7 +432,7 @@ public class SH3Gui extends javax.swing.JFrame {
 				}
 		
 			}
-			catch (IOException | InterruptedException | TesseractException ex) {
+			catch (InterruptedException | TesseractException ex) {
 				System.out.println(ex);
 			}
 		}
@@ -473,10 +459,10 @@ public class SH3Gui extends javax.swing.JFrame {
             int color = pokepic.getRGB(pokeCords.getCordX(), pokeCords.getCordY());
 
             int  currentSSRed = (color & 0x00ff0000) >> 16;
-            int  curentSSBlue = (color & 0x0000ff00) >> 8;
+            int  currentSSBlue = (color & 0x0000ff00) >> 8;
             int  currentSSGreen = color & 0x000000ff;
 
-            if((currentSSRed != gogcPoke.getOGPred()) || (curentSSBlue != gogcPoke.getOGPblue()) || (currentSSGreen != gogcPoke.getOGPgreen())){
+            if((currentSSRed != gogcPoke.getOGPred()) || (currentSSBlue != gogcPoke.getOGPblue()) || (currentSSGreen != gogcPoke.getOGPgreen())){
                 
                 shiny = true;
     
@@ -601,10 +587,10 @@ public class SH3Gui extends javax.swing.JFrame {
             int color = runButton.getRGB(runCords.getCordX(), runCords.getCordY());
 
             int  currentSSRed = (color & 0x00ff0000) >> 16;
-            int  curentSSBlue = (color & 0x0000ff00) >> 8;
+            int  currentSSBlue = (color & 0x0000ff00) >> 8;
             int  currentSSGreen = color & 0x000000ff;
 
-            if((currentSSRed == gogcRunButton.getOGPred()) & (curentSSBlue == gogcRunButton.getOGPblue()) & (currentSSGreen == gogcRunButton.getOGPgreen())){
+            if((currentSSRed == gogcRunButton.getOGPred()) & (currentSSBlue == gogcRunButton.getOGPblue()) & (currentSSGreen == gogcRunButton.getOGPgreen())){
                 
                 runButtonShown = true;
     
