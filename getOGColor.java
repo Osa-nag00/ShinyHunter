@@ -30,9 +30,6 @@ public class getOGColor {
         return instance;
     }
 
-
-
-
         public void setOGPred(int red) {
             OGPred = red;
         }
@@ -64,13 +61,9 @@ public class getOGColor {
         try{
 
 
-           
-            
-
             Robot robot = new Robot();
             Rectangle captureSize = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
             BufferedImage OGcolors = robot.createScreenCapture(captureSize);
-
 
             if(whichPic == 0){
                 //used for picture of pokemon
@@ -94,11 +87,6 @@ public class getOGColor {
             setOGPred(OGPokeRed);
             setOGPblue(OGPokeBlue);
             setOGPgreen(OGPokeGreen);
-
-
-
-
-      
 
         }catch(AWTException e) {e.printStackTrace();
         }catch(IOException e){e.printStackTrace();}

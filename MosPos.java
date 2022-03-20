@@ -15,7 +15,6 @@ public class MosPos {
 
     }
 
-
     //needed to use the object values thoughout program
     public static MosPos getInstance() {
         if(instance == null)
@@ -35,7 +34,6 @@ public class MosPos {
 
 
     //setter
-
     public void setCords(){
 
         try {
@@ -55,6 +53,4 @@ public class MosPos {
 
     }
 
-
-    
 }

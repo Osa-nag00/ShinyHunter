@@ -10,10 +10,9 @@ public class ScreenCaptureRectangle {
   public ScreenCaptureRectangle() throws AWTException{
 
     Robot robot = new Robot();
-    final Dimension screenSize = Toolkit.getDefaultToolkit().
-        getScreenSize();
-    final BufferedImage screen = robot.createScreenCapture(
-        new Rectangle(screenSize));
+    final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    
+    final BufferedImage screen = robot.createScreenCapture(new Rectangle(screenSize));
 
     setRect(screen);
 
