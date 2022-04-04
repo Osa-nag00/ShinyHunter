@@ -1,5 +1,5 @@
 # Shiny-Hunter
-This program automates the resetting process for finding a stationary(non-wild encounter) Pokemon running on the DeSmuME & Citra emulators
+This program automates the shiny hunting of random Pokemon.
 
 This is still very much, a work in progress.
 
