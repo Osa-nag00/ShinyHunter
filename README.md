@@ -56,7 +56,6 @@ Start:  Enter
   10) Repeat Step 9 for the "Capture Run Button From Battle" button, but for the Run button on the second screen of the ds emulator (within the Pokemon battle).
   11) Click the "Run Program" and watch your time being saved :).
 
-(CURENTLY THERE IS NO WAY TO EXIT PROGRAM AFTER CLICKING RUN WITHOUT USING TASK MANAGER OR THE PROGRAM FINDING THE SHINY, WILL FIX IN LATER UPDATE)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
